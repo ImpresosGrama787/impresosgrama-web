@@ -1,3 +1,3 @@
 [build]
-  publish = "Pagina Web - 05"
-  
+  base = "Pagina Web - 05"
+  publish = "."

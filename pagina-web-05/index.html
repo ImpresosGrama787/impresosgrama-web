@@ -7,13 +7,16 @@
     <!-- Carga de Tailwind CSS para un diseño moderno y responsive -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Configuración de Tailwind para usar los colores de la marca y la fuente Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Avenir+Next&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Avenir', 'sans-serif'], // Define Inter como la fuente principal
+                        sans: ['Inter', 'sans-serif'], // Define Inter como la fuente principal
                     },
                     colors: {
                         primary: '#a10000', // Rojo borgoña para el color principal (de tu logo)
@@ -28,7 +31,7 @@
     <style>
         /* Estilos personalizados para asegurar que la fuente Inter se aplique globalmente y para ajustes visuales "Font Inter"*/
         body {
-            font-family: 'Avenir', sans-serif;
+            font-family: 'Inter', sans-serif;
             color: #333333; /* Color de texto por defecto */
             background-color: #f0f2f5; /* Fondo suave para toda la página */
         }

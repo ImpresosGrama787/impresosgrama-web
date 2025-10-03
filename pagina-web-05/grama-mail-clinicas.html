@@ -1,257 +1,346 @@
 <!DOCTYPE html>
-
 <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresos Grama - Papelería para clínicas y consultorios - Imprenta - Gráfica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f6f8;
+            color: #0A9946;
+            margin: 0;
+            padding: 0;
+        }
 
-<head> <meta charset="UTF-8"> <title>Impresos Grama - Papelería para colegios - Imprenta - Grafica</title> <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  
-<style> body { font-family: 'Roboto', sans-serif; background-color: #f4f6f8; color: #0A9946; margin: 0;  padding: 0; }
+        .container {
+            max-width: 640px;
+            margin: 10px auto;
+            background-color: #f8efef;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
 
-.container {
-  max-width: 640px;
-  margin: 10px auto;
-  background-color: #f8efef;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  place-items: center;
-  
-}
+        .datos_arriba {
+            max-width: 640px;
+            font-size: 18px;
+            text-align: center;
+            line-height: 30px;
+            margin: 10px auto;
+            background-color: #f8f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
 
-.datos_arriba {
-  max-width: 640px;
-  font-size: 24px;
-  text-align: center;
-  line-height: 40px;
-  margin: 10px auto;
-  background-color: #f8f0f0;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+        .logo {
+            max-width: 640px;
+            margin: 0 auto 30px;
+            text-align: center;
+        }
 
-.logo {
-  max-width: 640px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  display: grid;
-  place-items: center;
-  text-align: center;
-}
+        h1 {
+            font-size: 28px;
+            color: #0A9946;
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-h1 {
-  font-size: 28px;
-  color: #0A9946;
-  margin-bottom: 20px;
-  text-align: center;
-}
+        h2 {
+            font-size: 24px;
+            color: #0A9946;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-h2 {
-  font-size: 26px;
-  color: #0A9946;
-  margin-top: 40px;
-  margin-bottom: 15px;
-}
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  text-align: center;
-}
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
 
-ul {
-  padding-left: 20px;
-  margin-bottom: 20px;
-  
-}
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-li {
-  margin-bottom: 10px;
-}
+        img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
 
-img {
-  max-width: 640px;  
-  max-width: 100%;
-  border-radius: 6px;
-  margin-bottom: -5px;
-  transition: transform 0.3s ease;
-  justify-content: center;
-  align-items: center;
-  
-}
+        img:hover {
+            transform: scale(1.03);
+        }
 
-img:hover {
-  transform: scale(1.03);
-}
+        .footer {
+            font-size: 14px;
+            color: #0A9946;
+            margin-top: 40px;
+            text-align: center;
+        }
 
-.footer {
-  font-size: 14px;
-  color: #0A9946;
-  margin-top: 40px;
-  text-align: center;
-}
+        .highlight {
+            max-width: 640px;
+            background-color: #eaf2f8;
+            padding: 15px;
+            border-left: 4px solid #0A9946;
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-.highlight {
-  max-width: 640px;
-  align-items: center;
-  max-width: 640px;
-  background-color: #eaf2f8;
-  padding: 10px;
-  border-left: 4px solid #0A9946;
-  margin-bottom: 20px;
-  text-align: center;
-}
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 1000;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: white;
-  padding: 12px 16px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  z-index: 1000;
-  font-size: large ;
-}
+        .whatsapp-float:hover {
+            background-color: #1ebe5d;
+        }
 
-.whatsapp-float:hover {
-  background-color: #1ebe5d;
-}
+        .galeria-medica {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
 
-.galeria-medica {
-  max-width: 640px;
-  display:flex;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
+        .galeria-medica img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+        }
 
-.galeria-medica img {
-  width: 250px;
-  height: auto;
-  border-radius: 6px;
-  transition: transform 0.3s ease;
-}
+        .galeria-medica img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
 
-.galeria-medica img:hover {
-  transform: scale(1.15);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-.galeria-medica figure {
-  width: 250px;
-  text-align: center;
-}
+        .galeria-medica figure {
+            text-align: center;
+            margin: 0;
+        }
 
-.galeria-medica figcaption {
-  font-size: 18px;
-  color: #555;
-  margin-top: 8px;
-}
-</style>
+        .galeria-medica figcaption {
+            font-size: 16px;
+            color: #555;
+            margin-top: 8px;
+        }
+
+        .contacto-info {
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .contacto-info a {
+            color: #0A9946;
+            text-decoration: none;
+        }
+
+        .contacto-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
-<body> <div class="container">
-  <!--<a href="https://impresosgrama.com.ar" target="_blank"> <img src="https://impresosgrama.com.ar/logo_encabezado_sinFoto_sinDatos.png" alt="Logo Impresos Grama" width="100%" class="logo"> </a>
+<body>
+    <div class="container">
+        <a href="https://wa.me/5491131605381" class="whatsapp-float" target="_blank">
+            <img src="https://impresosgrama.com.ar/whatsapp-icon.png" alt="Icono WhatsApp" style="height:25px;">
+            Pedí tu presupuesto por WhatsApp
+        </a>
+        
+        <div class="logo">
+            <a href="https://impresosgrama.com.ar" target="_blank">
+                <img src="https://impresosgrama.com.ar/logo_encabezado_sinFoto_sinDatos.png" alt="Logo Impresos Grama" width="100%">
+            </a>
+        </div>
 
-<div class="datos_arriba">
-  <img src="Clinica-12-location-dot.png" width="22px"> Avelino Rolón 787, Boulogne, Pcia. de Buenos Aires<br>
-  <img src="Clinica-13-phone-chico.png" width="30px"> 4747-2198
-  <a href="https://wa.me/5491131605381" target="_blank"> <img src="Clinica-14-mobile-alt.png" width="22px"> 11 3160 5381 <br>
-  <img src="Clinica-15-envelope.png" width="30px"> impresosgrama@gmail.com<br>
-  <a href="https://impresosgrama.com.ar" target="_blank"> <img src="Clinica-16-globe.png" width="25px"> impresosgrama.com.ar</p>
-  
-</div>-->
-<a href="https://wa.me/5491131605381" class="whatsapp-float" target="_blank"> <img src="https://impresosgrama.com.ar/whatsapp-icon.png" alt="Icono WhatsApp" style="height:25px; vertical-align:middle;"> Pedi tu presupuesto por Whatsapp </a>
-<h1><img src="Clinica-01-hospital.png" width="80px"> <br> <h1>Papelería institucional para clínicas y consultorios</h1>
+        <div class="datos_arriba">
+            <p>
+                <img src="Clinica-12-location-dot.png" width="22px" alt="Ubicación">
+                Avelino Rolón 787, Boulogne, Pcia. de Buenos Aires<br>
+                <img src="Clinica-13-phone-chico.png" width="30px" alt="Teléfono">
+                4747-2198
+                <a href="https://wa.me/5491131605381" target="_blank">
+                    <img src="Clinica-14-mobile-alt.png" width="22px" alt="WhatsApp">
+                    11 3160 5381
+                </a><br>
+                <img src="Clinica-15-envelope.png" width="30px" alt="Email">
+                impresosgrama@gmail.com<br>
+                <a href="https://impresosgrama.com.ar" target="_blank">
+                    <img src="Clinica-16-globe.png" width="25px" alt="Sitio web">
+                    impresosgrama.com.ar
+                </a>
+            </p>
+        </div>
 
-<div class="highlight">
-  <h2>Material gráfico profesional para el sector salud</h2>
-</div>
+        <h1>
+            <img src="Clinica-01-hospital.png" width="80px" alt="Icono hospital">
+            Papelería institucional para clínicas y consultorios
+        </h1>
 
-<p>
-  Hola, soy Gabriel de <strong>Impresos Grama</strong>, imprenta local en Boulogne.<br>
-  Ofrecemos soluciones gráficas adaptadas a clínicas, centros médicos y consultorios,
-  con diseño profesional y producción local.
-</p>
+        <div class="highlight">
+            <h2>Material gráfico profesional para el sector salud</h2>
+        </div>
 
-<h2><img src="Clinica-02-box-open.png" width="40px"> Catálogo de productos</h2>
-<ul>
-  <li><strong>Carpetas institucionales:</strong> Con solapa, logo y datos del centro médico</li>
-  <li><strong>Formularios personalizados:</strong> Historias clínicas, autorizaciones, recetas</li>
-  <li><strong>Folletos informativos:</strong> Servicios, especialidades, horarios</li>
-  <li><strong>Etiquetas para muestras:</strong> Identificación de pacientes y estudios</li>
-  <li><strong>Sobres institucionales:</strong> Para entrega de resultados y comunicados</li>
-  <li><strong>Tarjetas personales:</strong> Para profesionales de la salud</li>
-  <li><strong>Banners - Vinilos - Carteles en PVC:</strong> Para recepción y consultorios</li>
-</ul>
+        <p>
+            Hola, soy Gabriel de <strong>Impresos Grama</strong>, imprenta local en Boulogne.<br>
+            Ofrecemos soluciones gráficas adaptadas a clínicas, centros médicos y consultorios,
+            con diseño profesional y producción local.
+        </p>
 
-<h2><img src="Clinica-03-images.png" width="40px" alt="Icono ejemplos"> Galería de ejemplos</h2>
-<div class="galeria-medica">
-  <figure>
-    <a href="clinica-carpeta.png" target="_blank"></a>
-    <img src="clinica-carpeta.png" alt="Carpetas">
-    <figcaption>Carpetas para estudios médicos</figcaption>
-  </figure>
-  <figure>
-    <a href="clinica-folleto.png" target="_blank"></a>
-    <img src="clinica-folleto.png" alt="Vinilo en puerta">
-    <figcaption>Folletos: Dípticos, trípticos, Revistas, Manuales</figcaption>
-  </figure>
-  <figure>
-    <a href="clinica-sobre.png" target="_blank"></a>
-    <img src="clinica-sobre.png" alt="Sobres">
-    <figcaption>Sobres A4, Ofico con ventana</figcaption>
-  </figure>
-  <figure>
-    <a href="clinica-formularios.png" target="_blank"></a>
-    <img src="clinica-formularios.png" alt="Formularios">
-    <figcaption>Formularios Internos, Historias Clínicas</figcaption>
-  </figure>
-  <figure>
-    <a href="clinica-credenciales.png" target="_blank"></a>
-    <img src="clinica-credenciales.png" alt="Tarjetas personales">
-    <figcaption>Credenciales, Tarjetas de presentación</figcaption>
-  </figure>
-  <figure>
-    <a href="clinica-recetarios.png" target="_blank"></a>
-    <img src="clinica-recetarios.png" alt="Recetarios">
-    <figcaption>Recetarios, Indicaciones</figcaption>
-  </figure>
-  <figure>
-    <a href="clinica-banner.png" target="_blank"></a>
-    <img src="clinica-banner.png" alt="Banner">
-    <figcaption>Banner institucional, Cartelería, Vinilos</figcaption>
-  </figure>
-</div>
+        <h2>
+            <img src="Clinica-02-box-open.png" width="40px" alt="Icono productos">
+            Catálogo de productos
+        </h2>
+        <ul>
+            <li><strong>Carpetas institucionales:</strong> Con solapa, logo y datos del centro médico</li>
+            <li><strong>Formularios personalizados:</strong> Historias clínicas, autorizaciones, recetas</li>
+            <li><strong>Folletos informativos:</strong> Servicios, especialidades, horarios</li>
+            <li><strong>Etiquetas para muestras:</strong> Identificación de pacientes y estudios</li>
+            <li><strong>Sobres institucionales:</strong> Para entrega de resultados y comunicados</li>
+            <li><strong>Tarjetas personales:</strong> Para profesionales de la salud</li>
+            <li><strong>Banners - Vinilos - Carteles en PVC:</strong> Para recepción y consultorios</li>
+        </ul>
 
-<h2><img src="Clinica-04-check-circle.png" width="40px"> Beneficios</h2>
-<ul>
-  <li><img src="Clinica-05-id-card.png" width="25px"> Refuerza la identidad institucional</li>
-  <li><img src="Clinica-06-handshake.png" width="25px"> Mejora la presentación ante familias y proveedores</li>
-  <li><img src="Clinica-07-folder-open.png" width="25px"> Facilita la organización interna</li>
-  <li><img src="Clinica-08-pencil-ruler.png" width="25px"> Diseño adaptado a cada nivel educativo</li>
-  <li><img src="Clinica-09-truck.png" width="25px"> Producción profesional y entrega local</li>
-</ul>
+        <h2>
+            <img src="Clinica-03-images.png" width="40px" alt="Icono ejemplos">
+            Galería de ejemplos
+        </h2>
+        <div class="galeria-medica">
+            <figure>
+                <a href="clinica-carpeta.png" target="_blank">
+                    <img src="clinica-carpeta.png" alt="Carpetas para estudios médicos">
+                </a>
+                <figcaption>Carpetas para estudios médicos</figcaption>
+            </figure>
+            <figure>
+                <a href="clinica-folleto.png" target="_blank">
+                    <img src="clinica-folleto.png" alt="Folletos médicos">
+                </a>
+                <figcaption>Folletos: Dípticos, trípticos, Revistas, Manuales</figcaption>
+            </figure>
+            <figure>
+                <a href="clinica-sobre.png" target="_blank">
+                    <img src="clinica-sobre.png" alt="Sobres médicos">
+                </a>
+                <figcaption>Sobres A4, Oficio con ventana</figcaption>
+            </figure>
+            <figure>
+                <a href="clinica-formularios.png" target="_blank">
+                    <img src="clinica-formularios.png" alt="Formularios médicos">
+                </a>
+                <figcaption>Formularios Internos, Historias Clínicas</figcaption>
+            </figure>
+            <figure>
+                <a href="clinica-credenciales.png" target="_blank">
+                    <img src="clinica-credenciales.png" alt="Credenciales médicas">
+                </a>
+                <figcaption>Credenciales, Tarjetas de presentación</figcaption>
+            </figure>
+            <figure>
+                <a href="clinica-recetarios.png" target="_blank">
+                    <img src="clinica-recetarios.png" alt="Recetarios médicos">
+                </a>
+                <figcaption>Recetarios, Indicaciones</figcaption>
+            </figure>
+            <figure>
+                <a href="clinica-banner.png" target="_blank">
+                    <img src="clinica-banner.png" alt="Banner médico">
+                </a>
+                <figcaption>Banner institucional, Cartelería, Vinilos</figcaption>
+            </figure>
+        </div>
 
-<h2><img src="Clinica-10-phone.png" width="35px"> Contacto</h2>
-<p><img src="Clinica-11-user.png" width="22px"> Impresos Grama<br>
-  <img src="Clinica-12-location-dot.png" width="22px"> Avelino Rolón 787, Boulogne, Pcoa. de Buenos Aires<br>
-  <img src="Clinica-13-phone-chico.png" width="25px"> 4747-2198<br>
-  <a href="https://wa.me/5491131605381" target="_blank"> <img src="Clinica-14-mobile-alt.png" width="22px"> 11 3160 5381<br>
-  <img src="Clinica-15-envelope.png" width="25px"> impresosgrama@gmail.com<br>
-  <a href="https://impresosgrama.com.ar" target="_blank"> <img src="Clinica-16-globe.png" width="25px"> impresosgrama.com.ar</p>
+        <h2>
+            <img src="Clinica-04-check-circle.png" width="40px" alt="Icono beneficios">
+            Beneficios
+        </h2>
+        <ul>
+            <li>
+                <img src="Clinica-05-id-card.png" width="25px" alt="Icono identidad">
+                Refuerza la identidad institucional
+            </li>
+            <li>
+                <img src="Clinica-06-handshake.png" width="25px" alt="Icono presentación">
+                Mejora la presentación ante pacientes y proveedores
+            </li>
+            <li>
+                <img src="Clinica-07-folder-open.png" width="25px" alt="Icono organización">
+                Facilita la organización interna
+            </li>
+            <li>
+                <img src="Clinica-08-pencil-ruler.png" width="25px" alt="Icono diseño">
+                Diseño adaptado a cada institución médica
+            </li>
+            <li>
+                <img src="Clinica-09-truck.png" width="25px" alt="Icono entrega">
+                Producción profesional y entrega local
+            </li>
+        </ul>
 
+        <h2>
+            <img src="Clinica-10-phone.png" width="35px" alt="Icono contacto">
+            Contacto
+        </h2>
+        <div class="contacto-info">
+            <p>
+                <img src="Clinica-11-user.png" width="22px" alt="Icono usuario">
+                Impresos Grama<br>
+                <img src="Clinica-12-location-dot.png" width="22px" alt="Icono ubicación">
+                Avelino Rolón 787, Boulogne, Pcia. de Buenos Aires<br>
+                <img src="Clinica-13-phone-chico.png" width="25px" alt="Icono teléfono">
+                4747-2198<br>
+                <a href="https://wa.me/5491131605381" target="_blank">
+                    <img src="Clinica-14-mobile-alt.png" width="22px" alt="Icono celular">
+                    11 3160 5381
+                </a><br>
+                <img src="Clinica-15-envelope.png" width="25px" alt="Icono email">
+                impresosgrama@gmail.com<br>
+                <a href="https://impresosgrama.com.ar" target="_blank">
+                    <img src="Clinica-16-globe.png" width="25px" alt="Icono web">
+                    impresosgrama.com.ar
+                </a>
+            </p>
+        </div>
 
-<div class="footer">
-  Gracias por su tiempo. Podemos coordinar una presentación sin compromiso.
-</div>
-
-</div> </body> </html>
+        <div class="footer">
+            Gracias por su tiempo. Podemos coordinar una presentación sin compromiso.
+        </div>
+    </div>
+</body>
+</html>

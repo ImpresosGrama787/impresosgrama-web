@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="icon" type="image/png" href="logo_solapa_i.png">
     
     <style>
         body {
@@ -60,6 +61,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            justify-content: center;
         }
 
         p {
@@ -97,6 +99,9 @@
             color: #0A9946;
             margin-top: 40px;
             text-align: center;
+            padding: 20px;
+            background-color: #eaf2f8;
+            border-radius: 8px;
         }
 
         .highlight {
@@ -173,44 +178,70 @@
         .contacto-info a:hover {
             text-decoration: underline;
         }
+
+        /* Mejoras para responsividad en móviles */
+        @media (max-width: 480px) {
+            .container {
+                margin: 5px;
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .galeria-medica {
+                grid-template-columns: 1fr;
+            }
+            
+            .whatsapp-float {
+                font-size: 14px;
+                padding: 10px 14px;
+            }
+        }
     </style>
-    <link rel="icon" type="image/png" href="logo_solapa_i.png">
 </head>
 
 <body>
+    <a href="https://wa.me/5491131605381" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <img src="https://impresosgrama.com.ar/whatsapp-icon.png" alt="Icono WhatsApp" style="height:25px;">
+        Pedí tu presupuesto por WhatsApp
+    </a>
+    
     <div class="container">
-        <a href="https://wa.me/5491131605381" class="whatsapp-float" target="_blank">
-            <img src="https://impresosgrama.com.ar/whatsapp-icon.png" alt="Icono WhatsApp" style="height:25px;">
-            Pedí tu presupuesto por WhatsApp
-        </a>
-        
         <div class="logo">
-            <a href="https://impresosgrama.com.ar" target="_blank">
+            <a href="https://impresosgrama.com.ar" target="_blank" aria-label="Visitar sitio web de Impresos Grama">
                 <img src="https://impresosgrama.com.ar/logo_encabezado_sinFoto_sinDatos.png" alt="Logo Impresos Grama" width="100%">
             </a>
         </div>
 
         <div class="datos_arriba">
             <p>
-                <img src="Clinica-12-location-dot.png" width="22px" alt="Ubicación">
+                <img src="Clinica-12-location-dot.png" width="22" alt="Ubicación">
                 Avelino Rolón 787, Boulogne, Pcia. de Buenos Aires<br>
-                <img src="Clinica-13-phone-chico.png" width="30px" alt="Teléfono">
+                <img src="Clinica-13-phone-chico.png" width="30" alt="Teléfono">
                 4747-2198
                 <a href="https://wa.me/5491131605381" target="_blank">
-                    <img src="Clinica-14-mobile-alt.png" width="22px" alt="WhatsApp">
+                    <img src="Clinica-14-mobile-alt.png" width="22" alt="WhatsApp">
                     11 3160 5381
                 </a><br>
-                <img src="Clinica-15-envelope.png" width="30px" alt="Email">
+                <img src="Clinica-15-envelope.png" width="30" alt="Email">
                 impresosgrama@gmail.com<br>
                 <a href="https://impresosgrama.com.ar" target="_blank">
-                    <img src="Clinica-16-globe.png" width="25px" alt="Sitio web">
+                    <img src="Clinica-16-globe.png" width="25" alt="Sitio web">
                     impresosgrama.com.ar
                 </a>
             </p>
         </div>
 
         <h1>
-            <img src="Clinica-01-hospital.png" width="80px" alt="Icono hospital">
+            <img src="Clinica-01-hospital.png" width="80" alt="Icono hospital">
             Papelería institucional para clínicas y consultorios
         </h1>
 
@@ -225,7 +256,7 @@
         </p>
 
         <h2>
-            <img src="Clinica-02-box-open.png" width="40px" alt="Icono productos">
+            <img src="Clinica-02-box-open.png" width="40" alt="Icono productos">
             Catálogo de productos
         </h2>
         <ul>
@@ -239,48 +270,48 @@
         </ul>
 
         <h2>
-            <img src="Clinica-03-images.png" width="40px" alt="Icono ejemplos">
+            <img src="Clinica-03-images.png" width="40" alt="Icono ejemplos">
             Galería de ejemplos
         </h2>
         <div class="galeria-medica">
             <figure>
-                <a href="clinica-carpeta.png" target="_blank">
+                <a href="clinica-carpeta.png" target="_blank" aria-label="Ver imagen de carpetas médicas">
                     <img src="clinica-carpeta.png" alt="Carpetas para estudios médicos">
                 </a>
                 <figcaption>Carpetas para estudios médicos</figcaption>
             </figure>
             <figure>
-                <a href="clinica-folleto.png" target="_blank">
+                <a href="clinica-folleto.png" target="_blank" aria-label="Ver imagen de folletos médicos">
                     <img src="clinica-folleto.png" alt="Folletos médicos">
                 </a>
                 <figcaption>Folletos: Dípticos, trípticos, Revistas, Manuales</figcaption>
             </figure>
             <figure>
-                <a href="clinica-sobre.png" target="_blank">
+                <a href="clinica-sobre.png" target="_blank" aria-label="Ver imagen de sobres médicos">
                     <img src="clinica-sobre.png" alt="Sobres médicos">
                 </a>
                 <figcaption>Sobres A4, Oficio con ventana</figcaption>
             </figure>
             <figure>
-                <a href="clinica-formularios.png" target="_blank">
+                <a href="clinica-formularios.png" target="_blank" aria-label="Ver imagen de formularios médicos">
                     <img src="clinica-formularios.png" alt="Formularios médicos">
                 </a>
                 <figcaption>Formularios Internos, Historias Clínicas</figcaption>
             </figure>
             <figure>
-                <a href="clinica-credenciales.png" target="_blank">
+                <a href="clinica-credenciales.png" target="_blank" aria-label="Ver imagen de credenciales médicas">
                     <img src="clinica-credenciales.png" alt="Credenciales médicas">
                 </a>
                 <figcaption>Credenciales, Tarjetas de presentación</figcaption>
             </figure>
             <figure>
-                <a href="clinica-recetarios.png" target="_blank">
+                <a href="clinica-recetarios.png" target="_blank" aria-label="Ver imagen de recetarios médicos">
                     <img src="clinica-recetarios.png" alt="Recetarios médicos">
                 </a>
                 <figcaption>Recetarios, Indicaciones</figcaption>
             </figure>
             <figure>
-                <a href="clinica-banner.png" target="_blank">
+                <a href="clinica-banner.png" target="_blank" aria-label="Ver imagen de banner médico">
                     <img src="clinica-banner.png" alt="Banner médico">
                 </a>
                 <figcaption>Banner institucional, Cartelería, Vinilos</figcaption>
@@ -288,36 +319,35 @@
         </div>
 
         <h2>
-            <img src="Clinica-04-check-circle.png" width="40px" alt="Icono beneficios">
+            <img src="Clinica-04-check-circle.png" width="40" alt="Icono beneficios">
             Beneficios
         </h2>
         <ul>
             <li>
-                <img src="Clinica-05-id-card.png" width="25px" alt="Icono identidad">
+                <img src="Clinica-05-id-card.png" width="25" alt="Icono identidad">
                 Refuerza la identidad institucional
             </li>
             <li>
-                <img src="Clinica-06-handshake.png" width="25px" alt="Icono presentación">
+                <img src="Clinica-06-handshake.png" width="25" alt="Icono presentación">
                 Mejora la presentación ante pacientes y proveedores
             </li>
             <li>
-                <img src="Clinica-07-folder-open.png" width="25px" alt="Icono organización">
+                <img src="Clinica-07-folder-open.png" width="25" alt="Icono organización">
                 Facilita la organización interna
             </li>
             <li>
-                <img src="Clinica-08-pencil-ruler.png" width="25px" alt="Icono diseño">
+                <img src="Clinica-08-pencil-ruler.png" width="25" alt="Icono diseño">
                 Diseño adaptado a cada institución médica
             </li>
             <li>
-                <img src="Clinica-09-truck.png" width="25px" alt="Icono entrega">
+                <img src="Clinica-09-truck.png" width="25" alt="Icono entrega">
                 Producción profesional y entrega local
             </li>
         </ul>
+
         <div class="footer">
             Gracias por su tiempo. Podemos coordinar una presentación sin compromiso.
         </div>
     </div>
 </body>
 </html>
-
-
